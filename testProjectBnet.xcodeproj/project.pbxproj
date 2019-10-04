@@ -1,0 +1,806 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EB13A9F82340E88600994B64 /* AddEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13A9F72340E88600994B64 /* AddEntry.swift */; };
+		EB13A9FA2340E8BD00994B64 /* AddEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB13A9F92340E8BD00994B64 /* AddEntryService.swift */; };
+		EB1C2A4A2347862D009FB5F6 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1C2A492347862D009FB5F6 /* NetworkError.swift */; };
+		EB1DB1F6233D0EC100EFB515 /* NewSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1DB1F5233D0EC100EFB515 /* NewSession.swift */; };
+		EB1EA418233FB28D00B81765 /* EntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1EA417233FB28D00B81765 /* EntryRequest.swift */; };
+		EB1EA41A233FF2E700B81765 /* AddEntryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB1EA419233FF2E700B81765 /* AddEntryRequest.swift */; };
+		EB2365B823390D2F007E5DA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2365B723390D2F007E5DA6 /* AppDelegate.swift */; };
+		EB2365BD23390D2F007E5DA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2365BB23390D2F007E5DA6 /* Main.storyboard */; };
+		EB2365C023390D2F007E5DA6 /* testProjectBnet.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB2365BE23390D2F007E5DA6 /* testProjectBnet.xcdatamodeld */; };
+		EB2365C223390D34007E5DA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2365C123390D34007E5DA6 /* Assets.xcassets */; };
+		EB2365C523390D34007E5DA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2365C323390D34007E5DA6 /* LaunchScreen.storyboard */; };
+		EB2365D323392060007E5DA6 /* NewSessionrequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2365D223392060007E5DA6 /* NewSessionrequest.swift */; };
+		EB2365D523393B6F007E5DA6 /* IRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2365D423393B6F007E5DA6 /* IRequest.swift */; };
+		EB2365D723396ADE007E5DA6 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2365D623396ADE007E5DA6 /* NetworkManager.swift */; };
+		EB2365D923396B27007E5DA6 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2365D823396B27007E5DA6 /* Result.swift */; };
+		EB2C9DAA2344C5E500FAFDF9 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DA92344C5E500FAFDF9 /* Reachability.swift */; };
+		EB2C9DB223450D8000FAFDF9 /* ShowEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DB123450D8000FAFDF9 /* ShowEntryViewController.swift */; };
+		EB2C9DB423450D9500FAFDF9 /* ShowEntryViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DB323450D9500FAFDF9 /* ShowEntryViewInput.swift */; };
+		EB2C9DB623450DB800FAFDF9 /* ShowEntryViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DB523450DB800FAFDF9 /* ShowEntryViewOutput.swift */; };
+		EB2C9DB823450DDA00FAFDF9 /* ShowEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DB723450DDA00FAFDF9 /* ShowEntryPresenter.swift */; };
+		EB2C9DBA234510C200FAFDF9 /* ShowEntryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DB9234510C200FAFDF9 /* ShowEntryInteractor.swift */; };
+		EB2C9DBC234510D900FAFDF9 /* ShowEntryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DBB234510D900FAFDF9 /* ShowEntryInteractorInput.swift */; };
+		EB2C9DBE234510FD00FAFDF9 /* ShowEntryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DBD234510FD00FAFDF9 /* ShowEntryInteractorOutput.swift */; };
+		EB2C9DC02345113500FAFDF9 /* ShowEntryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DBF2345113500FAFDF9 /* ShowEntryAssembly.swift */; };
+		EB2C9DC22345159700FAFDF9 /* ShowEntryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DC12345159700FAFDF9 /* ShowEntryRouter.swift */; };
+		EB2C9DC4234515AC00FAFDF9 /* ShowEntryRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DC3234515AC00FAFDF9 /* ShowEntryRouterInput.swift */; };
+		EB2C9DC623451FE000FAFDF9 /* EntryListDataSourceOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2C9DC523451FE000FAFDF9 /* EntryListDataSourceOutput.swift */; };
+		EB38595C233A5EAD00E82315 /* CoreAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38595B233A5EAD00E82315 /* CoreAssembly.swift */; };
+		EB385960233A62EA00E82315 /* NewSessionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38595F233A62EA00E82315 /* NewSessionService.swift */; };
+		EB385962233A63E500E82315 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385961233A63E500E82315 /* Response.swift */; };
+		EB385964233A759E00E82315 /* ServicesAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385963233A759E00E82315 /* ServicesAssembly.swift */; };
+		EB38596D233A81CB00E82315 /* EntryListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38596C233A81CB00E82315 /* EntryListViewController.swift */; };
+		EB38596F233A81EE00E82315 /* EntryListViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38596E233A81EE00E82315 /* EntryListViewInput.swift */; };
+		EB385971233A820F00E82315 /* EntryListViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385970233A820F00E82315 /* EntryListViewOutput.swift */; };
+		EB385973233A83AE00E82315 /* EntryListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385972233A83AE00E82315 /* EntryListRouter.swift */; };
+		EB385975233A83E900E82315 /* EntryListRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385974233A83E900E82315 /* EntryListRouterInput.swift */; };
+		EB385977233A843200E82315 /* EntryListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385976233A843200E82315 /* EntryListPresenter.swift */; };
+		EB385979233A869700E82315 /* EntryListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385978233A869700E82315 /* EntryListInteractor.swift */; };
+		EB38597B233A86C500E82315 /* EntryListInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38597A233A86C500E82315 /* EntryListInteractorInput.swift */; };
+		EB38597D233A86D700E82315 /* EntryListInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38597C233A86D700E82315 /* EntryListInteractorOutput.swift */; };
+		EB38597F233A88D700E82315 /* TransitionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB38597E233A88D700E82315 /* TransitionHandler.swift */; };
+		EB385981233A8D2E00E82315 /* EntryListAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385980233A8D2E00E82315 /* EntryListAssembly.swift */; };
+		EB385984233A9F9D00E82315 /* EntryListDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385983233A9F9D00E82315 /* EntryListDataSource.swift */; };
+		EB385986233AABFD00E82315 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB385985233AABFD00E82315 /* User.swift */; };
+		EB39D80C23427855005C1D80 /* GetEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39D80B23427855005C1D80 /* GetEntry.swift */; };
+		EB39D80E23427A9A005C1D80 /* GetEntryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39D80D23427A9A005C1D80 /* GetEntryService.swift */; };
+		EB39D81123429EE7005C1D80 /* EntryListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB39D81023429EE7005C1D80 /* EntryListTableViewCell.swift */; };
+		EB4F7FD523463564009EE64B /* CreateEntryModuleOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4F7FD423463564009EE64B /* CreateEntryModuleOutput.swift */; };
+		EBC93AB5234138C000354E22 /* CreateEntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AB4234138C000354E22 /* CreateEntryViewController.swift */; };
+		EBC93AB7234138EA00354E22 /* CreateEntryViewInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AB6234138EA00354E22 /* CreateEntryViewInput.swift */; };
+		EBC93AB9234138F800354E22 /* CreateEntryViewOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AB8234138F800354E22 /* CreateEntryViewOutput.swift */; };
+		EBC93ABB2341394400354E22 /* CreateEntryRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93ABA2341394400354E22 /* CreateEntryRouter.swift */; };
+		EBC93ABD2341397100354E22 /* CreateEntryRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93ABC2341397100354E22 /* CreateEntryRouterInput.swift */; };
+		EBC93ABF23413A1400354E22 /* CreateEntryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93ABE23413A1400354E22 /* CreateEntryPresenter.swift */; };
+		EBC93AC123413DB100354E22 /* CreateEntryInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AC023413DB100354E22 /* CreateEntryInteractor.swift */; };
+		EBC93AC323413DE300354E22 /* CreateEntryInteractorInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AC223413DE300354E22 /* CreateEntryInteractorInput.swift */; };
+		EBC93AC523413E3D00354E22 /* CreateEntryInteractorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AC423413E3D00354E22 /* CreateEntryInteractorOutput.swift */; };
+		EBC93AC723413F2700354E22 /* CreateEntryAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBC93AC623413F2700354E22 /* CreateEntryAssembly.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EB13A9F72340E88600994B64 /* AddEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntry.swift; sourceTree = "<group>"; };
+		EB13A9F92340E8BD00994B64 /* AddEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryService.swift; sourceTree = "<group>"; };
+		EB1C2A492347862D009FB5F6 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		EB1DB1F5233D0EC100EFB515 /* NewSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSession.swift; sourceTree = "<group>"; };
+		EB1EA417233FB28D00B81765 /* EntryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryRequest.swift; sourceTree = "<group>"; };
+		EB1EA419233FF2E700B81765 /* AddEntryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEntryRequest.swift; sourceTree = "<group>"; };
+		EB2365B423390D2F007E5DA6 /* testProjectBnet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProjectBnet.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB2365B723390D2F007E5DA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EB2365BC23390D2F007E5DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EB2365BF23390D2F007E5DA6 /* testProjectBnet.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testProjectBnet.xcdatamodel; sourceTree = "<group>"; };
+		EB2365C123390D34007E5DA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EB2365C423390D34007E5DA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EB2365C623390D34007E5DA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB2365D223392060007E5DA6 /* NewSessionrequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionrequest.swift; sourceTree = "<group>"; };
+		EB2365D423393B6F007E5DA6 /* IRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRequest.swift; sourceTree = "<group>"; };
+		EB2365D623396ADE007E5DA6 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		EB2365D823396B27007E5DA6 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		EB2C9DA92344C5E500FAFDF9 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		EB2C9DB123450D8000FAFDF9 /* ShowEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryViewController.swift; sourceTree = "<group>"; };
+		EB2C9DB323450D9500FAFDF9 /* ShowEntryViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryViewInput.swift; sourceTree = "<group>"; };
+		EB2C9DB523450DB800FAFDF9 /* ShowEntryViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryViewOutput.swift; sourceTree = "<group>"; };
+		EB2C9DB723450DDA00FAFDF9 /* ShowEntryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryPresenter.swift; sourceTree = "<group>"; };
+		EB2C9DB9234510C200FAFDF9 /* ShowEntryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractor.swift; sourceTree = "<group>"; };
+		EB2C9DBB234510D900FAFDF9 /* ShowEntryInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractorInput.swift; sourceTree = "<group>"; };
+		EB2C9DBD234510FD00FAFDF9 /* ShowEntryInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryInteractorOutput.swift; sourceTree = "<group>"; };
+		EB2C9DBF2345113500FAFDF9 /* ShowEntryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryAssembly.swift; sourceTree = "<group>"; };
+		EB2C9DC12345159700FAFDF9 /* ShowEntryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryRouter.swift; sourceTree = "<group>"; };
+		EB2C9DC3234515AC00FAFDF9 /* ShowEntryRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowEntryRouterInput.swift; sourceTree = "<group>"; };
+		EB2C9DC523451FE000FAFDF9 /* EntryListDataSourceOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListDataSourceOutput.swift; sourceTree = "<group>"; };
+		EB38595B233A5EAD00E82315 /* CoreAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAssembly.swift; sourceTree = "<group>"; };
+		EB38595F233A62EA00E82315 /* NewSessionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewSessionService.swift; sourceTree = "<group>"; };
+		EB385961233A63E500E82315 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		EB385963233A759E00E82315 /* ServicesAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesAssembly.swift; sourceTree = "<group>"; };
+		EB38596C233A81CB00E82315 /* EntryListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewController.swift; sourceTree = "<group>"; };
+		EB38596E233A81EE00E82315 /* EntryListViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewInput.swift; sourceTree = "<group>"; };
+		EB385970233A820F00E82315 /* EntryListViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListViewOutput.swift; sourceTree = "<group>"; };
+		EB385972233A83AE00E82315 /* EntryListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListRouter.swift; sourceTree = "<group>"; };
+		EB385974233A83E900E82315 /* EntryListRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListRouterInput.swift; sourceTree = "<group>"; };
+		EB385976233A843200E82315 /* EntryListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListPresenter.swift; sourceTree = "<group>"; };
+		EB385978233A869700E82315 /* EntryListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListInteractor.swift; sourceTree = "<group>"; };
+		EB38597A233A86C500E82315 /* EntryListInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListInteractorInput.swift; sourceTree = "<group>"; };
+		EB38597C233A86D700E82315 /* EntryListInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListInteractorOutput.swift; sourceTree = "<group>"; };
+		EB38597E233A88D700E82315 /* TransitionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionHandler.swift; sourceTree = "<group>"; };
+		EB385980233A8D2E00E82315 /* EntryListAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListAssembly.swift; sourceTree = "<group>"; };
+		EB385983233A9F9D00E82315 /* EntryListDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListDataSource.swift; sourceTree = "<group>"; };
+		EB385985233AABFD00E82315 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EB39D80B23427855005C1D80 /* GetEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEntry.swift; sourceTree = "<group>"; };
+		EB39D80D23427A9A005C1D80 /* GetEntryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEntryService.swift; sourceTree = "<group>"; };
+		EB39D81023429EE7005C1D80 /* EntryListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryListTableViewCell.swift; sourceTree = "<group>"; };
+		EB4F7FD423463564009EE64B /* CreateEntryModuleOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryModuleOutput.swift; sourceTree = "<group>"; };
+		EBC93AB4234138C000354E22 /* CreateEntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryViewController.swift; sourceTree = "<group>"; };
+		EBC93AB6234138EA00354E22 /* CreateEntryViewInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryViewInput.swift; sourceTree = "<group>"; };
+		EBC93AB8234138F800354E22 /* CreateEntryViewOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryViewOutput.swift; sourceTree = "<group>"; };
+		EBC93ABA2341394400354E22 /* CreateEntryRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryRouter.swift; sourceTree = "<group>"; };
+		EBC93ABC2341397100354E22 /* CreateEntryRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryRouterInput.swift; sourceTree = "<group>"; };
+		EBC93ABE23413A1400354E22 /* CreateEntryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryPresenter.swift; sourceTree = "<group>"; };
+		EBC93AC023413DB100354E22 /* CreateEntryInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractor.swift; sourceTree = "<group>"; };
+		EBC93AC223413DE300354E22 /* CreateEntryInteractorInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractorInput.swift; sourceTree = "<group>"; };
+		EBC93AC423413E3D00354E22 /* CreateEntryInteractorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryInteractorOutput.swift; sourceTree = "<group>"; };
+		EBC93AC623413F2700354E22 /* CreateEntryAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEntryAssembly.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB2365B123390D2F007E5DA6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EB2365AB23390D2F007E5DA6 = {
+			isa = PBXGroup;
+			children = (
+				EB2365B623390D2F007E5DA6 /* testProjectBnet */,
+				EB2365B523390D2F007E5DA6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EB2365B523390D2F007E5DA6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB2365B423390D2F007E5DA6 /* testProjectBnet.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EB2365B623390D2F007E5DA6 /* testProjectBnet */ = {
+			isa = PBXGroup;
+			children = (
+				EB2365B723390D2F007E5DA6 /* AppDelegate.swift */,
+				EB2C9DA92344C5E500FAFDF9 /* Reachability.swift */,
+				EB385985233AABFD00E82315 /* User.swift */,
+				EB2365CE23390F6D007E5DA6 /* PresentationLayer */,
+				EB2365CD23390F64007E5DA6 /* ServiceLayer */,
+				EB2365CC23390F2B007E5DA6 /* CoreLayer */,
+				EB2365BB23390D2F007E5DA6 /* Main.storyboard */,
+				EB2365C123390D34007E5DA6 /* Assets.xcassets */,
+				EB2365C323390D34007E5DA6 /* LaunchScreen.storyboard */,
+				EB2365C623390D34007E5DA6 /* Info.plist */,
+				EB2365BE23390D2F007E5DA6 /* testProjectBnet.xcdatamodeld */,
+			);
+			path = testProjectBnet;
+			sourceTree = "<group>";
+		};
+		EB2365CC23390F2B007E5DA6 /* CoreLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EB38595A233A5E8900E82315 /* Assembly */,
+				EB2365CF23390F9C007E5DA6 /* NetworkManager */,
+				EB2365D123390FB4007E5DA6 /* Requests */,
+			);
+			path = CoreLayer;
+			sourceTree = "<group>";
+		};
+		EB2365CD23390F64007E5DA6 /* ServiceLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EB38595E233A5F6900E82315 /* Assembly */,
+				EB38595D233A5F5F00E82315 /* Services */,
+			);
+			path = ServiceLayer;
+			sourceTree = "<group>";
+		};
+		EB2365CE23390F6D007E5DA6 /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EB385965233A79D800E82315 /* Modules */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		EB2365CF23390F9C007E5DA6 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				EB2365D623396ADE007E5DA6 /* NetworkManager.swift */,
+				EB1C2A492347862D009FB5F6 /* NetworkError.swift */,
+				EB385961233A63E500E82315 /* Response.swift */,
+				EB2365D823396B27007E5DA6 /* Result.swift */,
+				EB39D80B23427855005C1D80 /* GetEntry.swift */,
+				EB13A9F72340E88600994B64 /* AddEntry.swift */,
+				EB1DB1F5233D0EC100EFB515 /* NewSession.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		EB2365D123390FB4007E5DA6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				EB2365D223392060007E5DA6 /* NewSessionrequest.swift */,
+				EB1EA417233FB28D00B81765 /* EntryRequest.swift */,
+				EB1EA419233FF2E700B81765 /* AddEntryRequest.swift */,
+				EB2365D423393B6F007E5DA6 /* IRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		EB2C9DAB23450D2000FAFDF9 /* ShowEntry */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DB023450D5E00FAFDF9 /* Assembly */,
+				EB2C9DAF23450D5400FAFDF9 /* Interactor */,
+				EB2C9DAE23450D3500FAFDF9 /* Presenter */,
+				EB2C9DAD23450D2E00FAFDF9 /* Router */,
+				EB2C9DAC23450D2A00FAFDF9 /* View */,
+			);
+			path = ShowEntry;
+			sourceTree = "<group>";
+		};
+		EB2C9DAC23450D2A00FAFDF9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DB123450D8000FAFDF9 /* ShowEntryViewController.swift */,
+				EB2C9DB323450D9500FAFDF9 /* ShowEntryViewInput.swift */,
+				EB2C9DB523450DB800FAFDF9 /* ShowEntryViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB2C9DAD23450D2E00FAFDF9 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DC12345159700FAFDF9 /* ShowEntryRouter.swift */,
+				EB2C9DC3234515AC00FAFDF9 /* ShowEntryRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB2C9DAE23450D3500FAFDF9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DB723450DDA00FAFDF9 /* ShowEntryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB2C9DAF23450D5400FAFDF9 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DB9234510C200FAFDF9 /* ShowEntryInteractor.swift */,
+				EB2C9DBB234510D900FAFDF9 /* ShowEntryInteractorInput.swift */,
+				EB2C9DBD234510FD00FAFDF9 /* ShowEntryInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB2C9DB023450D5E00FAFDF9 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB2C9DBF2345113500FAFDF9 /* ShowEntryAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB38595A233A5E8900E82315 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB38595B233A5EAD00E82315 /* CoreAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB38595D233A5F5F00E82315 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EB38595F233A62EA00E82315 /* NewSessionService.swift */,
+				EB39D80D23427A9A005C1D80 /* GetEntryService.swift */,
+				EB13A9F92340E8BD00994B64 /* AddEntryService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EB38595E233A5F6900E82315 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB385963233A759E00E82315 /* ServicesAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB385965233A79D800E82315 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				EB38597E233A88D700E82315 /* TransitionHandler.swift */,
+				EB2C9DAB23450D2000FAFDF9 /* ShowEntry */,
+				EBC93AAE234136AC00354E22 /* CreateEntry */,
+				EB385966233A7EF600E82315 /* EntryList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		EB385966233A7EF600E82315 /* EntryList */ = {
+			isa = PBXGroup;
+			children = (
+				EB38596B233A818700E82315 /* Assembly */,
+				EB38596A233A817E00E82315 /* Interactor */,
+				EB385969233A814600E82315 /* Presenter */,
+				EB385968233A814100E82315 /* Router */,
+				EB385967233A813B00E82315 /* View */,
+			);
+			path = EntryList;
+			sourceTree = "<group>";
+		};
+		EB385967233A813B00E82315 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EB385982233A9E9E00E82315 /* RecordListDataSource */,
+				EB38596C233A81CB00E82315 /* EntryListViewController.swift */,
+				EB38596E233A81EE00E82315 /* EntryListViewInput.swift */,
+				EB385970233A820F00E82315 /* EntryListViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EB385968233A814100E82315 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EB385972233A83AE00E82315 /* EntryListRouter.swift */,
+				EB385974233A83E900E82315 /* EntryListRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EB385969233A814600E82315 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB385976233A843200E82315 /* EntryListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EB38596A233A817E00E82315 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EB385978233A869700E82315 /* EntryListInteractor.swift */,
+				EB38597A233A86C500E82315 /* EntryListInteractorInput.swift */,
+				EB38597C233A86D700E82315 /* EntryListInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EB38596B233A818700E82315 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EB385980233A8D2E00E82315 /* EntryListAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+		EB385982233A9E9E00E82315 /* RecordListDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EB39D80F23429EB5005C1D80 /* Cell */,
+				EB2C9DC523451FE000FAFDF9 /* EntryListDataSourceOutput.swift */,
+				EB385983233A9F9D00E82315 /* EntryListDataSource.swift */,
+			);
+			path = RecordListDataSource;
+			sourceTree = "<group>";
+		};
+		EB39D80F23429EB5005C1D80 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				EB39D81023429EE7005C1D80 /* EntryListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		EB4F7FD323463554009EE64B /* CreateEntryModuleOutput */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F7FD423463564009EE64B /* CreateEntryModuleOutput.swift */,
+			);
+			path = CreateEntryModuleOutput;
+			sourceTree = "<group>";
+		};
+		EBC93AAE234136AC00354E22 /* CreateEntry */ = {
+			isa = PBXGroup;
+			children = (
+				EBC93AB3234136CF00354E22 /* Assembly */,
+				EBC93AB2234136C800354E22 /* Interactor */,
+				EBC93AB1234136C300354E22 /* Presenter */,
+				EBC93AB0234136BD00354E22 /* Router */,
+				EBC93AAF234136B900354E22 /* View */,
+			);
+			path = CreateEntry;
+			sourceTree = "<group>";
+		};
+		EBC93AAF234136B900354E22 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EBC93AB4234138C000354E22 /* CreateEntryViewController.swift */,
+				EBC93AB6234138EA00354E22 /* CreateEntryViewInput.swift */,
+				EBC93AB8234138F800354E22 /* CreateEntryViewOutput.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EBC93AB0234136BD00354E22 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				EBC93ABA2341394400354E22 /* CreateEntryRouter.swift */,
+				EBC93ABC2341397100354E22 /* CreateEntryRouterInput.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		EBC93AB1234136C300354E22 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				EB4F7FD323463554009EE64B /* CreateEntryModuleOutput */,
+				EBC93ABE23413A1400354E22 /* CreateEntryPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		EBC93AB2234136C800354E22 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				EBC93AC023413DB100354E22 /* CreateEntryInteractor.swift */,
+				EBC93AC223413DE300354E22 /* CreateEntryInteractorInput.swift */,
+				EBC93AC423413E3D00354E22 /* CreateEntryInteractorOutput.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		EBC93AB3234136CF00354E22 /* Assembly */ = {
+			isa = PBXGroup;
+			children = (
+				EBC93AC623413F2700354E22 /* CreateEntryAssembly.swift */,
+			);
+			path = Assembly;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EB2365B323390D2F007E5DA6 /* testProjectBnet */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EB2365C923390D34007E5DA6 /* Build configuration list for PBXNativeTarget "testProjectBnet" */;
+			buildPhases = (
+				EB2365B023390D2F007E5DA6 /* Sources */,
+				EB2365B123390D2F007E5DA6 /* Frameworks */,
+				EB2365B223390D2F007E5DA6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = testProjectBnet;
+			productName = testProjectBnet;
+			productReference = EB2365B423390D2F007E5DA6 /* testProjectBnet.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EB2365AC23390D2F007E5DA6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Загид Гусейнов";
+				TargetAttributes = {
+					EB2365B323390D2F007E5DA6 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = EB2365AF23390D2F007E5DA6 /* Build configuration list for PBXProject "testProjectBnet" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EB2365AB23390D2F007E5DA6;
+			productRefGroup = EB2365B523390D2F007E5DA6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EB2365B323390D2F007E5DA6 /* testProjectBnet */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB2365B223390D2F007E5DA6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB2365C523390D34007E5DA6 /* LaunchScreen.storyboard in Resources */,
+				EB2365C223390D34007E5DA6 /* Assets.xcassets in Resources */,
+				EB2365BD23390D2F007E5DA6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EB2365B023390D2F007E5DA6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB1EA41A233FF2E700B81765 /* AddEntryRequest.swift in Sources */,
+				EB1EA418233FB28D00B81765 /* EntryRequest.swift in Sources */,
+				EB2C9DBA234510C200FAFDF9 /* ShowEntryInteractor.swift in Sources */,
+				EB38597D233A86D700E82315 /* EntryListInteractorOutput.swift in Sources */,
+				EB2C9DB223450D8000FAFDF9 /* ShowEntryViewController.swift in Sources */,
+				EB385979233A869700E82315 /* EntryListInteractor.swift in Sources */,
+				EB2365D723396ADE007E5DA6 /* NetworkManager.swift in Sources */,
+				EB1DB1F6233D0EC100EFB515 /* NewSession.swift in Sources */,
+				EB38597F233A88D700E82315 /* TransitionHandler.swift in Sources */,
+				EB1C2A4A2347862D009FB5F6 /* NetworkError.swift in Sources */,
+				EBC93AB7234138EA00354E22 /* CreateEntryViewInput.swift in Sources */,
+				EB2C9DB423450D9500FAFDF9 /* ShowEntryViewInput.swift in Sources */,
+				EB4F7FD523463564009EE64B /* CreateEntryModuleOutput.swift in Sources */,
+				EB385962233A63E500E82315 /* Response.swift in Sources */,
+				EB385964233A759E00E82315 /* ServicesAssembly.swift in Sources */,
+				EBC93ABD2341397100354E22 /* CreateEntryRouterInput.swift in Sources */,
+				EB2365D323392060007E5DA6 /* NewSessionrequest.swift in Sources */,
+				EB2365C023390D2F007E5DA6 /* testProjectBnet.xcdatamodeld in Sources */,
+				EBC93AC123413DB100354E22 /* CreateEntryInteractor.swift in Sources */,
+				EB2C9DAA2344C5E500FAFDF9 /* Reachability.swift in Sources */,
+				EB2365D923396B27007E5DA6 /* Result.swift in Sources */,
+				EB39D81123429EE7005C1D80 /* EntryListTableViewCell.swift in Sources */,
+				EB385971233A820F00E82315 /* EntryListViewOutput.swift in Sources */,
+				EB2C9DC4234515AC00FAFDF9 /* ShowEntryRouterInput.swift in Sources */,
+				EB385977233A843200E82315 /* EntryListPresenter.swift in Sources */,
+				EB38596D233A81CB00E82315 /* EntryListViewController.swift in Sources */,
+				EB2C9DBC234510D900FAFDF9 /* ShowEntryInteractorInput.swift in Sources */,
+				EBC93AC323413DE300354E22 /* CreateEntryInteractorInput.swift in Sources */,
+				EB39D80E23427A9A005C1D80 /* GetEntryService.swift in Sources */,
+				EB38597B233A86C500E82315 /* EntryListInteractorInput.swift in Sources */,
+				EB2C9DC02345113500FAFDF9 /* ShowEntryAssembly.swift in Sources */,
+				EBC93AB5234138C000354E22 /* CreateEntryViewController.swift in Sources */,
+				EBC93ABB2341394400354E22 /* CreateEntryRouter.swift in Sources */,
+				EB13A9FA2340E8BD00994B64 /* AddEntryService.swift in Sources */,
+				EB2C9DB823450DDA00FAFDF9 /* ShowEntryPresenter.swift in Sources */,
+				EB13A9F82340E88600994B64 /* AddEntry.swift in Sources */,
+				EBC93AC523413E3D00354E22 /* CreateEntryInteractorOutput.swift in Sources */,
+				EBC93ABF23413A1400354E22 /* CreateEntryPresenter.swift in Sources */,
+				EB385981233A8D2E00E82315 /* EntryListAssembly.swift in Sources */,
+				EBC93AB9234138F800354E22 /* CreateEntryViewOutput.swift in Sources */,
+				EBC93AC723413F2700354E22 /* CreateEntryAssembly.swift in Sources */,
+				EB2C9DC22345159700FAFDF9 /* ShowEntryRouter.swift in Sources */,
+				EB385975233A83E900E82315 /* EntryListRouterInput.swift in Sources */,
+				EB2365D523393B6F007E5DA6 /* IRequest.swift in Sources */,
+				EB38595C233A5EAD00E82315 /* CoreAssembly.swift in Sources */,
+				EB2C9DBE234510FD00FAFDF9 /* ShowEntryInteractorOutput.swift in Sources */,
+				EB2C9DC623451FE000FAFDF9 /* EntryListDataSourceOutput.swift in Sources */,
+				EB385984233A9F9D00E82315 /* EntryListDataSource.swift in Sources */,
+				EB385973233A83AE00E82315 /* EntryListRouter.swift in Sources */,
+				EB2365B823390D2F007E5DA6 /* AppDelegate.swift in Sources */,
+				EB38596F233A81EE00E82315 /* EntryListViewInput.swift in Sources */,
+				EB2C9DB623450DB800FAFDF9 /* ShowEntryViewOutput.swift in Sources */,
+				EB385960233A62EA00E82315 /* NewSessionService.swift in Sources */,
+				EB385986233AABFD00E82315 /* User.swift in Sources */,
+				EB39D80C23427855005C1D80 /* GetEntry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EB2365BB23390D2F007E5DA6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2365BC23390D2F007E5DA6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EB2365C323390D34007E5DA6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EB2365C423390D34007E5DA6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EB2365C723390D34007E5DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EB2365C823390D34007E5DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EB2365CA23390D34007E5DA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JDTKFW3;
+				INFOPLIST_FILE = testProjectBnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.testProjectBnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EB2365CB23390D34007E5DA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9M6JDTKFW3;
+				INFOPLIST_FILE = testProjectBnet/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = c.testProjectBnet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EB2365AF23390D2F007E5DA6 /* Build configuration list for PBXProject "testProjectBnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2365C723390D34007E5DA6 /* Debug */,
+				EB2365C823390D34007E5DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EB2365C923390D34007E5DA6 /* Build configuration list for PBXNativeTarget "testProjectBnet" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB2365CA23390D34007E5DA6 /* Debug */,
+				EB2365CB23390D34007E5DA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB2365BE23390D2F007E5DA6 /* testProjectBnet.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB2365BF23390D2F007E5DA6 /* testProjectBnet.xcdatamodel */,
+			);
+			currentVersion = EB2365BF23390D2F007E5DA6 /* testProjectBnet.xcdatamodel */;
+			path = testProjectBnet.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EB2365AC23390D2F007E5DA6 /* Project object */;
+}
